@@ -5,7 +5,7 @@ import { app } from '../../firebase';
 export default function FirebaseCRUD() {
     const database = getDatabase(app);
     const [users, setUsers] = useState([]);
-    const [userInput, setUserInput] = useState({ username: '', email: '', id: null }); // Added 'id' for update reference
+    const [userInput, setUserInput] = useState({ username: '', email: '', id: null }); 
 
     useEffect(() => {
         fetchUsers();
